@@ -1,13 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  scroll-behavior: smooth;
+}
+@layer utilities {
+  .clip-your-needful-style {
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  }
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: "Noto Sans KR", sans-serif;
+}
+@layer base {
+}
+@layer components {
+  .reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .reveal_left {
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal_left.active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .reveal_top {
+    position: relative;
+    transform: translateY(-150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal_top.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .photo {
+    height: 100px;
+    width: 200px;
+  }
+
+  .clipPath {
+    mypolygon: "polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 1rem))";
+  }
+  .scroll-tracker {
+    position: fixed;
+    inset: 0 0 auto;
+    height: 0.5rem;
+    background-color: #4b5ede;
+    z-index: 99;
+  }
 }
