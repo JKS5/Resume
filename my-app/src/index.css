@@ -4,11 +4,20 @@
 html {
   scroll-behavior: smooth;
 }
+
 @layer utilities {
   .clip-your-needful-style {
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   }
+  .font_Jua {
+    font-family: "Jua", sans-serif;
+  }
+  .font_Oswald {
+    font-family: "Oswald", sans-serif;
+  }
 }
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR&display=swap");
 body {
   margin: 0;
   font-family: "Noto Sans KR", sans-serif;
@@ -40,6 +49,16 @@ code {
     transform: translateX(0);
     opacity: 1;
   }
+  .reveal_right {
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal_right.active {
+    transform: translateX(0);
+    opacity: 1;
+  }
   .reveal_top {
     position: relative;
     transform: translateY(-150px);
@@ -47,6 +66,16 @@ code {
     transition: 2s all ease;
   }
   .reveal_top.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .reveal_zero {
+    position: relative;
+    transform: translateY(0);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal_zero.active {
     transform: translateY(0);
     opacity: 1;
   }
@@ -65,5 +94,9 @@ code {
     height: 0.5rem;
     background-color: #4b5ede;
     z-index: 99;
+  }
+
+  .font-link {
+    font-family: "Noto Sans KR", sans-serif;
   }
 }

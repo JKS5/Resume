@@ -21,36 +21,50 @@ function Skill() {
         Tech Stack
       </div>
       <div className="flex flex-wrap">
-        <div className="flex w-1/2 text-white">
-          <div className="">
-            <div className="">기술 스택에 대한 전반적인 경험 보유</div>
-            <div className="">
-              프론트 엔드를 지향하면서 React를 중심으로한 기술 스택을 사용
-            </div>
-            <div className="">
-              DB 스키마 작성, AWS를 통햬 도메인을 구입하여 배포를 한 경험이
+        <div className="flex w-1/2 items-center justify-center text-white">
+          <div className="justify-center mx-10 ">
+            <div className="text-5xl reveal font_Jua">프론트</div>
+            <div className="mt-2 text-2xl reveal">
+              기본적인 JavaScript, CSS, HTML을 다룹니다. 위 3가지를 기반으로
+              TypeScript, React, Redux(toolkit) 및 Figma, Miro등을 사용 경험이
               있습니다.
+            </div>
+            <div className="mt-5 text-5xl reveal  font_Jua">백엔드</div>
+            <div className="mt-2 text-2xl reveal">
+              Node.js, express, MySql 통해 서버 개발 및 배포 익혀 배포한 경험도
+              있습니다. Git 과 Github를 사용하여 협업을 하였습니다.
+            </div>
+            <div className="mt-5 text-5xl reveal  font_Jua"> 배포 </div>
+            <div className="mt-2 text-2xl reveal">
+              AWS를 통해 EC2를 구매하여 서버를 구매하고, 도메인을 구매하여
+              서버를 apache를 통해 항시 유지되도록 하였습니다.
             </div>
           </div>
         </div>
-        <div className=" flex w-1/2 justify-center text-white">
+        <div className=" flex w-1/2 justify-center text-white reveal_right">
           <div>
             <div className="flex flex-wrap">
               <img className="animate-fade-in-up photo" src={CSS3I}></img>
               <img className="animate-fade-in-up photo" src={HTML5I}></img>
               <img className="animate-fade-in-up photo" src={JAVASCRIPTI}></img>
+            </div>
+            <div className="flex flex-wrap">
               <img className="animate-fade-in-up photo" src={REDUXI}></img>
               <img className="animate-fade-in-up photo" src={TYPESCRIPTI}></img>
               <img className="animate-fade-in-up photo" src={REACTI}></img>
             </div>
+
             <br></br>
             <div className="flex flex-wrap ">
               <img className="animate-fade-in-up photo" src={APACHEI}></img>
               <img className="animate-fade-in-up photo" src={GITHUBI}></img>
               <img className="animate-fade-in-up photo" src={GITI}></img>
-              <img className="animate-fade-in-up photo" src={NODE}></img>
-              <img className="animate-fade-in-up photo" src={AWSI}></img>
-              <img className="animate-fade-in-up photo" src={MYSQLI}></img>
+
+              <div className="flex flex-wrap ">
+                <img className="animate-fade-in-up photo" src={NODE}></img>
+                <img className="animate-fade-in-up photo" src={AWSI}></img>
+                <img className="animate-fade-in-up photo" src={MYSQLI}></img>
+              </div>
             </div>
           </div>
         </div>
